@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processador de Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Processador de Imagens</h1>
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/*" multiple>
+        </div>
+        <button id="processButton">Processar Imagens</button>
+        <div id="loadingMessage" class="hidden">Processando...</div>
+        <button id="downloadButton" class="hidden">Baixar Excel</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
